@@ -1,0 +1,22 @@
+ @model HomeDetailsViewModel
+ @{      
+     ViewBag.Title = "Student Detail Page";              
+ }
+
+
+     <div>
+         Name:@Model.Student.Name
+     </div>
+     <div>
+         EMail:@Model.Student.Email
+     </div>
+     <div>
+         ClassName:@Model.Student.ClassName
+     </div>
+
+@section Scripts
+{
+    <script src="~/js/custom.js"></script>
+}     
+
+    

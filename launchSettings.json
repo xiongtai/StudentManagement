@@ -1,0 +1,28 @@
+{
+    "iisSetting": {
+        "windowsAuthentication": false,
+        "anonymousAuthentication": true,
+        "iisExpress": {
+            "applicationUrl": "http://localhost:329",
+            "sslPort": 0
+        }
+    },
+    "profiles": {
+        "IIS Express": {
+            "commandName": "IISExpress",
+            "launchBrowser": true,
+            "environmentVariables": {
+                "MyKey": "appsetting.launchSetting.json MyKey"
+            }
+        }
+    },
+    "StudentManagementSystem": {
+        "commandName": "Project",
+        "launchBrowser": true,
+        "applicationUrl": "http://localhost:5020",
+        "environmentVariables": {
+            "ASPNETCORE_ENVIRONMENT": "Development",
+            "MyKey": "appsetting.launchSetting.json MyKey"
+        }
+    }
+}
