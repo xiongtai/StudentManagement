@@ -18,9 +18,9 @@ namespace StudentManagementSystem.Controllers
             return View(students);
         }
 
-        public IActionResult Details()
+        public IActionResult Details(int id = 1)
         {
-            var student = _studentRepository.GetStudent(1);
+            var student = _studentRepository.GetStudent(id);
             var viewmodel = new HomeDetailsViewModel()
             {
                 Student = student,

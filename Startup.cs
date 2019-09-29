@@ -35,8 +35,11 @@ namespace StudentManagementSystem
             }
 
             app.UseStaticFiles();
-            // app.UseMvc();
-            app.UseMvcWithDefaultRoute();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute("default", "{controller=home}/{action=index}/{id?}");
+            });
+
 
         }
     }
