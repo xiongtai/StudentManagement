@@ -28,5 +28,10 @@ namespace StudentManagementSystem.Controllers
             };
             return View(viewmodel);
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }
